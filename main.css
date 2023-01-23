@@ -65,3 +65,9 @@ src: url("assets/webfonts/Poppins-Italic.woff") format("woff");
   clip-path: circle();
 
 }
+
+.crop{
+
+  margin-top: -80px;
+
+}
