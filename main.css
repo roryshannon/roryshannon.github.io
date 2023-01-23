@@ -40,3 +40,9 @@ src: url("assets/webfonts/manrope-variablefont_wght.woff") format("woff");
 font-family: "Poppins-Bold";
 src: url("assets/webfonts/Poppins-Bold.woff") format("woff");
 }
+
+@font-face {
+font-family: "Poppins-Italic";
+src: url("assets/webfonts/Poppins-Italic.woff") format("woff");
+}
+
