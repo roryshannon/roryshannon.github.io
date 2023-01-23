@@ -1,12 +1,13 @@
 body {
   font-family: Ariel;
-  background-color: #96e6fd;
-  color: pastel;
+  background-color: #000000;
+  color: white;
   text-align: center;
 }
 
 p1 {
   font-family: test;
-  src: url(assets/webfonts/fa-brands-400.ttf)
+  src: url(assets/webfonts/fa-brands-400.ttf);
+  color: white;
   
 }
