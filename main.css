@@ -8,6 +8,13 @@ body {
   background-size: auto;
   
 }
+h1 {
+  font-family: 'Poppins-Bold', Arial, sans-serif;
+  font-weight:normal;
+  font-style:normal;
+  color: white;
+}
+
 p1 {
   font-family: 'Manrope', Arial, sans-serif;
   font-weight:normal;
@@ -26,4 +33,10 @@ p2 {
 @font-face {
 font-family: "Manrope";
 src: url("assets/webfonts/manrope-variablefont_wght.woff") format("woff");
+}
+
+
+@font-face {
+font-family: "Poppins-Bold";
+src: url("assets/webfonts/Poppins-Bold.woff") format("woff");
 }
