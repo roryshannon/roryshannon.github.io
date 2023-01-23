@@ -9,10 +9,11 @@ body {
   
 }
 
-p1 {
+p {
   font-family: test;
   src: url(assets/webfonts/fa-brands-400.ttf);
-  color: white;
+  color: black;
+  opacity: 50%;
   
 }
 
