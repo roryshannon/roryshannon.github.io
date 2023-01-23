@@ -8,6 +8,10 @@ body {
   background-size: cover;
   
 }
+p1 {
+  color: white;
+  background-color: #e4e4e4;
+}
 
 p2 {
   font-family: test;
