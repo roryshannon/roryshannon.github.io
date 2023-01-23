@@ -19,3 +19,8 @@ p2 {
   opacity: 50%;
   
 }
+
+@font-face {
+font-family: "Manrope";
+src: url("assets/webfonts/manrope-variablefont_wght.woff") format("woff");
+}
