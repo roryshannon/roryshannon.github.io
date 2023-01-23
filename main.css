@@ -3,3 +3,9 @@ body {
   color: pastel;
   text-align: center;
 }
+
+p1 {
+  font-family: test;
+  src: url(assets/webfonts/)
+  
+}
