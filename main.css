@@ -9,6 +9,9 @@ body {
   
 }
 p1 {
+  font-family: 'Manrope', Arial, sans-serif;
+  font-weight:normal;
+  font-style:normal;
   color: white;
 }
 
