@@ -60,3 +60,8 @@ src: url("assets/webfonts/Poppins-Italic.woff") format("woff");
   right: 50px;
   
 }
+
+.circle{
+  clip-path: circle;
+
+}
