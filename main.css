@@ -47,7 +47,7 @@ font-family: "Poppins-Italic";
 src: url("assets/webfonts/Poppins-Italic.woff") format("woff");
 }
 
-.imgbox{
+.img{
   position: fixed;
   right: 30%;  
   
