@@ -49,11 +49,7 @@ src: url("assets/webfonts/Poppins-Italic.woff") format("woff");
 
 .img{
   position: fixed;
-  right: 30%;  
-  
-}
-
-.circle{
+  right: 30%; 
   clip-path: circle();
-
+  
 }
