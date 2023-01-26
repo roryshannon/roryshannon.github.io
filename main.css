@@ -57,3 +57,17 @@ src: url("assets/webfonts/Poppins-Italic.woff") format("woff");
  
   
 }
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
