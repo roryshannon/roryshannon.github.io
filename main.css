@@ -60,7 +60,7 @@ src: url("assets/webfonts/Poppins-Italic.woff") format("woff");
 
 
 .column {
-  float: left;
+  float: right;
   width: 33.33%;
   padding: 15px;
 }
