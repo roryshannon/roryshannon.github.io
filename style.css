@@ -64,8 +64,8 @@ strong { font-weight: var(--fw-bold) }
 /* logo */
 
 .logo{
-    max-height: 40px;
-    max-width: 20px;
+    max-height: 200px;
+    max-width: 100px;
     
 }
 /* Buttons */
