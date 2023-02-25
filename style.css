@@ -61,7 +61,13 @@ strong { font-weight: var(--fw-bold) }
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
 }
+/* logo */
 
+.logo{
+    max-height: 40px;
+    max-width: 20px;
+    
+}
 /* Buttons */
 
 .btn {
