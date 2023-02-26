@@ -1,1 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DevJane Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="index.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <p>Rory Shannon</>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#tutoring" class="nav__link">Tutoring</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                Some info on my<strong>recent projects</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">What I'm working on</p>
+            <img src="img/projects-01.jpg" alt="" class="intro__img">
+        </section>
+        
+        <div class="page-item-individual">
+            <p>Especially in computing it's important to always be learning new stuff and moving forward. In my previous tech job, many people were using company funds to access the plethora of course available online (devnet, ccna, cissp etc) and now that I've lost that I try to find other stuff to keep my skills sharp (the balance between interest and usefullness is often rather fine!) such as coding this website, learning how to use (and even make) APIs, learning webscraping, and making lots of other little tools and programs when I can and/or need to. </p>
+            <p>For example the other day I was doing the weekly shop (as one must) and was irritated by its repetitive and dull nature. And then I remembed I was a Computer Scientist! Why not use my skills to make a program to automate the weekly shop with the click of a button and some email confirmation perhaps? Another great use of my skils...</p>
+            <p>Lastly I'll meniton the largest project I have ever accomplished (in computer science terms) for my final year of A-levels I had to reserach and then implement a "maze solver" for my computing NEA. It was a great challenge which I eventually completed and can be seen <a href="https://replit.com/@roryshannon29/IMproved#start_screen.py" target="_blank">here!</a> (It's a little rough around the edges but they're bugs not features...right?)</p>
+        </div>
+        
+        <!-- footer -->
+        <footer class="footer">
+            <!-- hm -->
+            <a href="mailto:rory@roryshannon.co.uk" class="footer__link">rory@roryshannon.co.uk</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/rory-shannon-861a7b1ba/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com/Rory6324" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.instagram.com/rory_s11/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/roryshannon" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+    </body>
+</html>
