@@ -413,4 +413,24 @@ header {
     margin-right: auto;
 }
 
+.languages_img {
+    box-shadow: var(--bs);
+}
+
+@media (min-width: 600px) {
+    .language {
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-areas: 
+            "title img"
+            "subtitle img"
+            "text img";
+        grid-column-gap: 2em;
+    
+    .language_img {
+        grid-area: img;
+        position: relative;
+        z-index: 2;
+    }
+}
 
