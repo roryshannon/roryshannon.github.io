@@ -521,15 +521,15 @@ header {
     }
 }
 
-    .flex-container {
-  display: flex;
-  background-color: white;
-  justify-content: center;
+.flex-container {
+    display: flex;
+    background-color: white;
+    justify-content: center;
 }
 
 .flex-container > div {
-  background-color: blueviolet;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
+    background-color: blueviolet;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
 }
