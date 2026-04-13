@@ -41,10 +41,15 @@ setInterval(updateClock, 1000);
 // ---- TYPING ANIMATION ----
 const commands = [
   'whoami',
-  'cat about.txt',
+  'cat blog.html',
   'ls projects/',
   'git log --oneline',
-  'npm run build',
+  'git pull --one large latte please',
+  'whois harjinder lallie',
+  'echo "thanks to all my course mates"',
+  'echo "Savva is the best..."',
+  'echo "tully smells"',
+  ''
   'ssh rorybshannon.co.uk',
 ];
 let cmdIdx = 0, charIdx = 0, isDeleting = false;
