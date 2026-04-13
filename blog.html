@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Rory Shannon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .blog-hero {
+      padding: 10rem 2.5rem 4rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .blog-hero-label {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+    .blog-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(4rem, 12vw, 9rem);
+      line-height: 0.9;
+      letter-spacing: 0.02em;
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+    }
+    .blog-hero p {
+      color: rgba(232,228,217,0.55);
+      font-size: 0.9rem;
+      font-family: var(--font-mono);
+      max-width: 400px;
+    }
+
+    .blog-list {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2.5rem 8rem;
+    }
+    .blog-post {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 2.5rem;
+      padding: 2.5rem 0;
+      border-top: 1px solid var(--border);
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.2s;
+      position: relative;
+    }
+    .blog-post:hover { background: rgba(200,245,66,0.02); }
+    .blog-post::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 1px;
+      background: var(--border);
+    }
+    .blog-post:last-child::after { display: none; }
+    .blog-meta {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--dim);
+      letter-spacing: 0.08em;
+      padding-top: 0.4rem;
+    }
+    .blog-meta .tag-pill {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: var(--accent3);
+      border: 1px solid rgba(77,255,210,0.25);
+      padding: 0.15rem 0.5rem;
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .blog-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 3vw, 2.5rem);
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.75rem;
+      transition: color 0.2s;
+    }
+    .blog-post:hover .blog-title { color: var(--accent); }
+    .blog-excerpt {
+      color: rgba(232,228,217,0.55);
+      font-size: 0.9rem;
+      line-height: 1.6;
+      max-width: 600px;
+    }
+    .blog-arrow {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--dim);
+      margin-top: 1rem;
+      transition: color 0.2s, transform 0.2s;
+      display: inline-block;
+    }
+    .blog-post:hover .blog-arrow {
+      color: var(--accent);
+      transform: translateX(4px);
+    }
+
+    .blog-empty {
+      padding: 6rem 0;
+      border-top: 1px solid var(--border);
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--dim);
+      letter-spacing: 0.08em;
+    }
+    .blog-empty::before {
+      content: '> ';
+      color: var(--accent);
+    }
+
+    @media (max-width: 600px) {
+      .blog-post { grid-template-columns: 1fr; gap: 0.75rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="cursor"></div>
+  <div id="cursor-trail"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <nav id="nav">
+    <a href="index.html" class="nav-logo" data-glitch="RS">RS</a>
+    <ul class="nav-links">
+      <li><a href="index.html#about" class="nav-link">/about</a></li>
+      <li><a href="index.html#work" class="nav-link">/work</a></li>
+      <li><a href="blog.html" class="nav-link" style="color:var(--accent)">/blog</a></li>
+      <li><a href="index.html#contact" class="nav-link">/contact</a></li>
+    </ul>
+    <div class="nav-status">
+      <span class="status-dot"></span>
+      <span id="clock">--:--:--</span>
+    </div>
+  </nav>
+
+  <div class="blog-hero">
+    <div class="blog-hero-label">writings / thoughts / rants</div>
+    <h1>THE BLOG</h1>
+    <p>Irregular dispatches on code, design, climbing, and whatever else is on my mind.</p>
+  </div>
+
+  <div class="blog-list">
+
+    <!-- Example post — duplicate this block for each new post -->
+    <a href="posts/first-post.html" class="blog-post reveal">
+      <div class="blog-meta">
+        <div>14 Apr 2025</div>
+        <div class="tag-pill">devlog</div>
+      </div>
+      <div>
+        <div class="blog-title">Building this site from scratch (again)</div>
+        <p class="blog-excerpt">
+          Every developer eventually burns down their portfolio and starts fresh.
+          Here's why I did it, what I learned, and why acid green is a legitimate design choice.
+        </p>
+        <span class="blog-arrow">read more →</span>
+      </div>
+    </a>
+
+    <!-- Add more posts above this comment -->
+
+    <!-- Uncomment when you have no posts:
+    <div class="blog-empty">no posts yet. check back soon.</div>
+    -->
+
+  </div>
+
+  <footer>
+    <span>© 2025 Rory Shannon</span>
+    <span class="footer-built">thoughts, unfiltered</span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
