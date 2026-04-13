@@ -49,7 +49,6 @@ const commands = [
   'echo "thanks to all my course mates"',
   'echo "Savva is the best..."',
   'echo "tully smells"',
-  ''
   'ssh rorybshannon.co.uk',
 ];
 let cmdIdx = 0, charIdx = 0, isDeleting = false;
