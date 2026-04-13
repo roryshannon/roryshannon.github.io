@@ -1,5 +1,5 @@
 # roryshannon.github.io
-  WERE BACK CHAT
+  WERE BACK
 
   and ready to ruuuuumble 
 
