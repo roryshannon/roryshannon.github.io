@@ -89,10 +89,10 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
 // ---- COUNTER ANIMATION ----
 const targets = {
-  0: 12,    // projects shipped — update these!
-  1: 847,   // coffees
-  2: 3,     // admitted bugs
-  3: 94,    // routes climbed
+  0: 21,    // square route of 441
+  1: 296,   // potentially the number of steps in tower of pisa (sources vary)
+  2: 29,     // letters in the norwegian alphabet
+  3: 9401,    // times i've remade this website 
 };
 
 function animateCounter(el, target) {
