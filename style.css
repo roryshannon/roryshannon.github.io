@@ -6,12 +6,12 @@
 :root {
   --bg: #0a0a0a;
   --bg2: #111111;
-  --fg: #e8e4d9;
-  --accent: #c8f542;      /* acid green */
-  --accent2: #ff4d4d;     /* hot red */
-  --accent3: #4dffd2;     /* teal */
-  --dim: #4a4a40;
-  --border: rgba(200,245,66,0.15);
+  --fg: #e2e3e4;
+  --accent: #d93ebf;      /* pink */
+  --accent2: #7f18c4;     /* purple */
+  --accent3: #449abe;     /* blue */
+  --dim: #4a4049;
+  --border: rgba(152, 200, 248, 0.15);
   --font-mono: 'Space Mono', monospace;
   --font-display: 'Bebas Neue', sans-serif;
   --font-body: 'DM Sans', sans-serif;
@@ -313,7 +313,7 @@ body {
   display: inline-block;
 }
 .btn-primary:hover {
-  background: #d4ff55;
+  background: #fd8feb;
   transform: translateY(-2px);
 }
 .btn-ghost {
@@ -550,7 +550,7 @@ body {
 }
 .project-card:hover .project-title { color: var(--accent); }
 .project-desc {
-  color: rgba(232,228,217,0.55);
+  color: rgba(208, 214, 228, 0.55);
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
@@ -564,7 +564,7 @@ body {
   font-size: 0.6rem;
   letter-spacing: 0.1em;
   color: var(--accent3);
-  border: 1px solid rgba(77,255,210,0.25);
+  border: 1px solid rgba(27, 69, 132, 0.25);
   padding: 0.2rem 0.5rem;
   text-transform: uppercase;
 }
