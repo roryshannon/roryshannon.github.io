@@ -530,7 +530,7 @@ body {
   background: var(--border);
 }
 .project-card:last-child::after { display: none; }
-.project-card:hover { background: rgba(200,245,66,0.02); }
+.project-card:hover { background: rgba(66, 170, 245, 0.02); }
 
 .project-num {
   font-family: var(--font-mono);
